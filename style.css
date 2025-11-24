@@ -20,8 +20,7 @@ body{
     color: var(--texto);
 
     transition: 
-    background-color 0.4s ease;
-    color 0.4s ease
+    background-color 0.4s ease, color 0.4s ease;
 }
 
 header {
