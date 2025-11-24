@@ -214,6 +214,7 @@ article h2 {
 
 #projeto-container .projeto a:hover {
     color: var(--destaque);
+    transition-duration: 0.4s;
 }
 
 #projeto-container .projeto:hover {
