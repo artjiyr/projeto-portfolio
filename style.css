@@ -297,11 +297,11 @@ footer > a:hover {
 
 body.escuro {
     --fundo-principal: #0d0d0d;
-    --texto: #ffffff;             /* AGORA O TEXTO É BRANCO */
+    --texto: #ffffff;             
     --texto-inverso: #ffffff;
 
-    --destaque: #ff3333;          /* Vermelho vivo */
-    --destaque-inverso: #ff6666;  /* Vermelho mais claro */
+    --destaque: #ff3333;          
+    --destaque-inverso: #ff6666;  
 
     --fundo-card: #1a1a1a;
 }

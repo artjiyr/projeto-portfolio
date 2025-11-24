@@ -1,6 +1,6 @@
-// =========================
-// 🎨 Alternância de Tema
-// =========================
+
+// Alternância de Tema
+
 const botao = document.getElementById('botao-tema');
 const body = document.body;
 
@@ -27,9 +27,9 @@ botao.addEventListener('click', () => {
 });
 
 
-// =========================
-// 📜 Scroll Suave Navegação
-// =========================
+
+//Scroll Suave Navegação
+
 const navLinks = document.querySelectorAll('#menu ul a');
 
 navLinks.forEach(link => {
