@@ -18,6 +18,10 @@ body{
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+
+    transition: 
+    background-color 0.4s ease;
+    color 0.4s ease
 }
 
 header {
@@ -218,6 +222,12 @@ article h2 {
     border-radius: 8px;
 }
 
+header, section#ficha, article, #projeto-container .projeto, #formacao-container .curso {
+    transition: 
+    background-color 0.4s ease,
+    color 0.4s ease, border-color 0.4s ease;
+}
+
 footer {
     background-color: var(--destaque);
     color: var(--fundo-principal);
@@ -238,6 +248,21 @@ footer > a:hover {
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: auto 300px 1fr auto;
+    }
+
+    section#ficha {
+        grid-column: 2 / 3;
+        height: fit-content;
+        position: sticky;
+        top: 65px;
+    }
+
+    section#detalhes {
+        grid-column: 3 / 4;
+    }
+
     #skill-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -256,4 +281,16 @@ footer > a:hover {
         max-width: 20%;
         max-height: 200px;
     }
+}
+
+
+body.escuro {
+    --fundo-principal: #0d0d0d;
+    --texto: #ffffff;             /* AGORA O TEXTO É BRANCO */
+    --texto-inverso: #ffffff;
+
+    --destaque: #ff3333;          /* Vermelho vivo */
+    --destaque-inverso: #ff6666;  /* Vermelho mais claro */
+
+    --fundo-card: #1a1a1a;
 }
