@@ -1,4 +1,7 @@
-const botao = document.getElementById('tema');
+// =========================
+// 🎨 Alternância de Tema
+// =========================
+const botao = document.getElementById('botao-tema');
 const body = document.body;
 
 // Função para aplicar o tema
@@ -24,21 +27,23 @@ botao.addEventListener('click', () => {
 });
 
 
-// Scroll Suave de Navegação
+// =========================
+// 📜 Scroll Suave Navegação
+// =========================
 const navLinks = document.querySelectorAll('#menu ul a');
 
 navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         e.preventDefault();
 
         const alvo = document.querySelector(this.getAttribute('href'));
         if (!alvo) return;
 
         const alturaHeader = document.querySelector('header').offsetHeight;
-        const posicaoDestino = alvo.offsetTop - alturaHeader;
+        const destino = alvo.offsetTop - alturaHeader;
 
         window.scrollTo({
-            top: posicaoDestino,
+            top: destino,
             behavior: 'smooth'
         });
     });
